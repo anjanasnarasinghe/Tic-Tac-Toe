@@ -60,6 +60,8 @@ public class TicTacToe_S extends javax.swing.JFrame {
         String b8 = jButton8.getText();
         String b9 = jButton9.getText();
         
+        
+        
         if(b1 == ("X") && b2 == ("X") && b3 == ("X"))
         {
             jButton1.setBackground(Color.YELLOW);
@@ -538,6 +540,71 @@ public class TicTacToe_S extends javax.swing.JFrame {
             jButton8.setBackground(Color.LIGHT_GRAY);
             jButton9.setBackground(Color.LIGHT_GRAY);
             gameScore();
+            
+        }else {
+            boolean but1 = false;
+            boolean but2 = false;
+            boolean but3 = false;
+            boolean but4 = false;
+            boolean but5 = false;
+            boolean but6 = false;
+            boolean but7 = false;
+            boolean but8 = false;
+            boolean but9 = false;
+            
+            if(b1 == ("O") || b1 == ("X")){
+                but1 = true;
+            }
+            if(b2 == ("O") || b2 == ("X")){
+                but2 = true;
+            }
+            if(b3 == ("O") || b3 == ("X")){
+                but3 = true;
+            }
+            if(b4 == ("O") || b4 == ("X")){
+                but4 = true;
+            }
+            if(b5 == ("O") || b5 == ("X")){
+                but5 = true;
+            }
+            if(b6 == ("O") || b6 == ("X")){
+                but6 = true;
+            }
+            if(b7 == ("O") || b7 == ("X")){
+                but7 = true;
+            }
+            if(b8== ("O") || b8 == ("X")){
+                but8 = true;
+            }
+            if(b9 == ("O") || b9 == ("X")){
+                but9 = true;
+            }
+            
+            if(but1 == true && but2 == true && but3 == true && but4 == true && but5 == true && but6 == true && but7 == true && but8 == true && but9 == true ){
+                
+            JOptionPane.showMessageDialog(this,"The game is tie","Tic Tac Toe",JOptionPane.INFORMATION_MESSAGE);
+            
+            jButton1.setText(null);
+            jButton2.setText(null);
+            jButton3.setText(null);
+            jButton4.setText(null);
+            jButton5.setText(null);
+            jButton6.setText(null);
+            jButton7.setText(null);
+            jButton8.setText(null);
+            jButton9.setText(null);
+            
+            jButton1.setBackground(Color.LIGHT_GRAY);
+            jButton2.setBackground(Color.LIGHT_GRAY);
+            jButton3.setBackground(Color.LIGHT_GRAY);
+            jButton4.setBackground(Color.LIGHT_GRAY);
+            jButton5.setBackground(Color.LIGHT_GRAY);
+            jButton6.setBackground(Color.LIGHT_GRAY);
+            jButton7.setBackground(Color.LIGHT_GRAY);
+            jButton8.setBackground(Color.LIGHT_GRAY);
+            jButton9.setBackground(Color.LIGHT_GRAY);
+                
+            }
             
         }
         
